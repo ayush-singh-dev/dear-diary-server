@@ -16,7 +16,7 @@ app.get("/home", (req, res) => {
 });
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "*",
   methods: "GET, PUT , POST , DELETE, PETCH, HEAD",
   credentials: true,
 };
