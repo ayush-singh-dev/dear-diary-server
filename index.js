@@ -16,7 +16,7 @@ app.get("/home", (req, res) => {
 });
 
 const corsOptions = {
-  origin: "https://dear-diary.onrender.com",
+  origin: "https://dear-diary-swart.vercel.app",
   methods: "GET, PUT , POST , DELETE, PATCH, HEAD",
   credentials: true,
 };
