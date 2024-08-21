@@ -16,8 +16,8 @@ app.get("/home", (req, res) => {
 });
 
 const corsOptions = {
-  origin: "*",
-  methods: "GET, PUT , POST , DELETE, PETCH, HEAD",
+  origin: "https://dear-diary.onrender.com",
+  methods: "GET, PUT , POST , DELETE, PATCH, HEAD",
   credentials: true,
 };
 
