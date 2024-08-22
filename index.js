@@ -16,7 +16,7 @@ app.get("/home", (req, res) => {
 });
 
 const corsOptions = {
-  origin: "https://dear-diary-two.vercel.app",
+  origin: "https://hideardiary.netlify.app",
   methods: "GET, PUT , POST , DELETE, PATCH, HEAD",
   credentials: true,
 };
