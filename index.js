@@ -17,7 +17,7 @@ app.get("/home", (req, res) => {
 
 const corsOptions = {
   // origin: "https://dear-diary-swart.vercel.app",
-  origin: "http://localhost:5173/"
+  origin: "http://localhost:5173/",
   methods: "GET, PUT , POST , DELETE, PATCH, HEAD",
   credentials: true,
 };
