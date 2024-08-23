@@ -109,9 +109,12 @@ const deletePost = async (req, res) => {
   try {
     const { id } = req.params;
     const post = await Post.findByIdAndDelete(id);
-
+    const userId =  req.user._id 
     if (!post) {
       return res.status(404).json({ msg: "post not found" });
+    }
+    if(Post.author.toString() !== userId){
+      return res.status(403).json({ msg: 'You are not authorized to delete this post' }); //check
     }
     res.status(200).json({ msg: "Post deleted successfully" });
   } catch (error) {
