@@ -16,8 +16,8 @@ app.get("/home", (req, res) => {
 });
 
 const corsOptions = {
-  origin: "http://localhost:5173",
-  methods: "GET, PUT , POST , DELETE, PETCH, HEAD",
+  origin: "https://hideardiary.netlify.app",
+  methods: "GET, PUT , POST , DELETE, PATCH, HEAD",
   credentials: true,
 };
 
